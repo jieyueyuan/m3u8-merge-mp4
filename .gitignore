@@ -1,0 +1,6 @@
+@echo off
+*.pyc
+__pycache__/
+*.mp4
+*.ts
+

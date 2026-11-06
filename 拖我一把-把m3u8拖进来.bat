@@ -2,9 +2,11 @@
 chcp 65001 >nul
 setlocal EnableDelayedExpansion
 rem ============================================================
-rem  Drag m3u8 files or folders onto this .bat icon.
-rem  They are merged to .mp4 (stream copy first, auto fallback).
-rem  Or double-click and paste a path when prompted.
+rem  Drag m3u8 files or folders onto this .bat icon; they are
+rem  merged to .mp4 (stream copy first, auto re-encode fallback).
+rem  Console messages are auto-localized (zh/en/ja/ko) by
+rem  m3u8_to_mp4.py based on your system language.
+rem  Keep this bat next to m3u8_to_mp4.py. Needs Python + ffmpeg.
 rem ============================================================
 
 set "SCRIPT=%~dp0m3u8_to_mp4.py"
@@ -39,7 +41,8 @@ goto :loop
 
 :run
 if not defined ARGS (
-    set /p "ONE=Paste m3u8 file or folder path ^(or drag files onto this icon^): "
+    echo Enter path, or just drag files onto this icon:
+    set /p "ONE=> "
     if not defined ONE ( echo Nothing entered. & pause & exit /b 1 )
     set "ARGS="!ONE!""
 )

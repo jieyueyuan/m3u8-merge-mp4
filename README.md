@@ -1,3 +1,5 @@
+[🇨🇳 中文](README.md) · [🇺🇸 English](README.en.md) · [🇯🇵 日本語](README.ja.md) · [🇰🇷 한국어](README.ko.md)
+
 # m3u8-merge-mp4 🎬
 
 把 `.m3u8`（HLS 播放清单 + ts 分段）批量合成 `.mp4` 的 Windows 小工具。
@@ -59,6 +61,22 @@ python m3u8_to_mp4.py --url "https://example.com/index.m3u8"
 | `--ffmpeg 路径` | 手动指定 ffmpeg.exe |
 | `--timeout 秒` | 单任务超时（默认 7200） |
 
+## 界面语言（中 / EN / 日 / 한）
+
+所有使用提示**自动跟随系统界面语言**（中文 / English / 日本語 / 한국어），无需设置。强制指定方式：
+
+```bash
+# 环境变量（对所有入口生效：CLI / GUI / 拖拽 bat）
+set M3U8_LANG=en          # Windows CMD
+$env:M3U8_LANG="ja"       # PowerShell
+export M3U8_LANG=ko       # bash
+
+# 或命令行参数（仅 CLI）
+python m3u8_to_mp4.py ... --lang en
+```
+
+「双击合成」bat 的文案来自同目录的 `lang_zh.txt` / `lang_en.txt` / `lang_ja.txt` / `lang_ko.txt`（KEY=VALUE 纯文本，可自行改词）；四个文件都缺省时内置英文，单文件拷走照常用。
+
 ## 依赖
 
 - **ffmpeg**（必须）：`winget install Gyan.FFmpeg`，或从 [gyan.dev](https://www.gyan.dev/ffmpeg/builds/) 下载完整版解压后加入 PATH。脚本也会自动探测常见安装位置。
@@ -77,9 +95,11 @@ python m3u8_to_mp4.py --url "https://example.com/index.m3u8"
 
 ```
 拖我一把-把m3u8拖进来.bat    方式1：拖拽入口
-双击合成-当前文件夹.bat      方式2：扔进文件夹双击（独立单文件）
+双击合成-当前文件夹.bat      方式2：扔进文件夹双击（可独立单文件运行）
 m3u8_to_mp4.py              命令行引擎 / 方式1的后端
 m3u8合成器GUI.py             方式3：tkinter 窗口版
+lang_zh.txt lang_en.txt lang_ja.txt lang_ko.txt   方式2的四语文案文件
+README.md README.en.md README.ja.md README.ko.md  四语说明文档
 ```
 
 ## 常见问题

@@ -1,0 +1,14 @@
+# ko — 한국어 메시지 (더블클릭 bat 용)
+TITLE=m3u8 → mp4 병합 (이 폴더)
+NOFF=[오류] PATH에서 ffmpeg을 찾을 수 없습니다. 설치: winget install Gyan.FFmpeg
+EXIST=건너뜀: 같은 이름 mp4가 이미 있습니다(다시 하려면 삭제)
+FALLBACK=copy 실패, 재인코딩으로 전환...
+COPYOK=완료: mp4 (무손실 Remux)
+ENCOK=완료: mp4 (재인코딩)
+ENCFAIL=실패:
+NONE=이 폴더에 .m3u8이 없습니다. 이 bat을 m3u8 파일과 같은 폴더에 놓으세요.
+DONE=완료:
+OK=성공
+FAILED=실패
+NFOUND=발견
+LOC=출력 mp4가 이 폴더에 있습니다.

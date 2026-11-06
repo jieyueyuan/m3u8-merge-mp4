@@ -1,0 +1,14 @@
+# ja — 日本語メッセージ（ダブルクリック版bat用）
+TITLE=m3u8 → mp4 変換（このフォルダ）
+NOFF=[エラー] PATH に ffmpeg がありません。インストール: winget install Gyan.FFmpeg
+EXIST=スキップ：同名 mp4 が既にあります（やり直すには削除）
+FALLBACK=copy 失敗、再エンコードに切り替えます...
+COPYOK=完了：mp4（可逆カプセリング）
+ENCOK=完了：mp4（再エンコード）
+ENCFAIL=失敗:
+NONE=このフォルダに .m3u8 がありません。この bat を m3u8 と同じフォルダに置いてください。
+DONE=完了：
+OK=成功
+FAILED=失敗
+NFOUND=検出
+LOC=出力先の mp4 はこのフォルダにあります。

@@ -1,0 +1,14 @@
+# en — English messages for the double-click bat
+TITLE=m3u8 to mp4 (this folder)
+NOFF=[ERROR] ffmpeg not found in PATH. Install: winget install Gyan.FFmpeg
+EXIST=skip: mp4 already exists (delete it to redo)
+FALLBACK=copy failed, re-encoding...
+COPYOK=OK: mp4 (lossless copy)
+ENCOK=OK: mp4 (re-encoded)
+ENCFAIL=FAIL:
+NONE=No .m3u8 found in this folder. Put this bat next to your m3u8 files.
+DONE=Done:
+OK=ok
+FAILED=failed
+NFOUND=found
+LOC=Output mp4 is in this folder.

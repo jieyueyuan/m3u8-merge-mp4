@@ -1,0 +1,14 @@
+# zh — 双击合成-当前文件夹.bat 的中文消息
+TITLE=m3u8 合成 mp4（当前文件夹）
+NOFF=[错误] 未找到 ffmpeg（PATH）。安装：winget install Gyan.FFmpeg
+EXIST=跳过：mp4 已存在（想重做请先删除）
+FALLBACK=无损封装失败，改为重新编码...
+COPYOK=完成：mp4（无损封装）
+ENCOK=完成：mp4（重新编码）
+ENCFAIL=失败:
+NONE=本文件夹内没有 .m3u8 文件。请把这个 bat 放到 m3u8 所在文件夹。
+DONE=完成：
+OK=成功
+FAILED=失败
+NFOUND=总数
+LOC=输出的 mp4 就在本文件夹。
